@@ -19,9 +19,9 @@ import ClientsList from "../components/ClientsList.vue";
 
 const fb = ref()
 const enviro = ref()
-const base = import.meta.env.MODE == "development" ? "" : "public/"
+const base = location.href.indexOf("brandmint") > 0 ? "public" : ""
 function getProjects() {
-    fetch('/api/front/clients')
+    fetch(base + '/api/front/clients')
         .then((response) => response.json())
         .then((data) => parseData(data));
 }
