@@ -20,7 +20,7 @@ return new class extends Migration {
             $table->string("name")->unique();
             $table->string("link");
             $table->string("location");
-            $table->string("description");
+            $table->text("description");
             $table->string("tags");
             $table->timestamps();
         });

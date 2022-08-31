@@ -1,5 +1,6 @@
 <template>
     <form @submit.prevent="addProject()" class=" p-6 rounded-md">
+
         <h1 class="text-4xl mt-4 mb-12 font-medium">Project Details</h1>
         <div class="grid grid-cols-12 gap-8">
             <!-- Images -->
@@ -27,7 +28,12 @@
                         </label>
                         <div>
                             <img :id="`temp-image-${index}`" src="" alt="">
-
+                            <button type="button" @click="removeImage(index)" class="flex items-center gap-1 text-red-400 mt-2 mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                                </svg>
+                                Remove
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -114,12 +120,20 @@
                 </div>
             </div>
         </div>
-        <div class="mt-6">
+        <div class="mt-6 flex gap-4">
             <input type="submit" value="Save"
-                   class="inline-block border-none w-auto px-24  bg-primary text-white font-medium"
+                   class="inline-block border-none w-auto px-24  bg-primary text-white font-medium cursor-pointer hover:bg-opacity-50"
                    :class="loading && 'cursor-not-allowed opacity-70'"
             >
+            <div v-if="errors.length > 0" class="inline-block">
+                <div class="bg-red-500 p-4 inline-block rounded-md text-white">
+                    <p v-for="error in errors" >
+                        - {{error}}
+                    </p>
+                </div>
+            </div>
         </div>
+
     </form>
 </template>
 
@@ -150,7 +164,7 @@ const description = ref("description")
 const tags = ref("tags")
 let images = reactive([])
 const loading = ref(false)
-
+const errors = ref([])
 function addImage() {
     images.push({
         hasImage: false
@@ -171,8 +185,8 @@ async function addProject() {
 }
 
 async function saveData() {
-
-
+    errors.value = []
+    loading.value = true
     let formData = new FormData()
     formData.append("category", selectedCategory.value)
     formData.append("featured", featured.value ? 1 : 0)
@@ -183,12 +197,16 @@ async function saveData() {
     formData.append("description", description.value)
     formData.append("tags", tags.value)
     const images_array = document.getElementsByClassName("image-input-wrapper")
-    console.log(images_array)
     Array.from(images_array).forEach(image => {
         if (image.files[0]) {
             formData.append("images[]", image.files[0]);
         }
     });
+    if(images_array.length === 0){
+        alert("Please add at least one image")
+        return
+    }
+
     await window.axios({
         method: "POST",
         url: "/dashboard/save-project",
@@ -207,10 +225,15 @@ async function saveData() {
         loading.value = false
 
     }).catch((e) => {
-        alert(e)
-    })
+        let errorsArr = e.response.data.errors
+        Object.keys(errorsArr).map((error) => {
+            errors.value.push(errorsArr[error][0])
+        })
+    }).finally(() => loading.value = false)
 }
-
+function removeImage(index) {
+    images.value = images.splice(index,1)
+}
 </script>
 
 <style scoped lang="postcss">
