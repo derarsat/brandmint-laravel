@@ -3,10 +3,10 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
 export default ({command}) => ({
-        base: command === 'serve' ? '' : 'public/build/',
+        base: command === 'serve' ? '' : '/build/',
         publicDir: 'fake_dir_so_nothing_gets_copied', build: {
             manifest: true,
-            outDir: 'public/build',
+            outDir: 'build',
             rollupOptions: {
             },
         },
