@@ -7,13 +7,13 @@
     "file": "assets/AvenirLTStd-Black.63c31b44.otf",
     "src": "resources/front/fonts/AvenirLTStd-Black.otf"
   },
-  "resources/front/fonts/AvenirLTStd-Book.otf": {
-    "file": "assets/AvenirLTStd-Book.4fb98e77.otf",
-    "src": "resources/front/fonts/AvenirLTStd-Book.otf"
-  },
   "resources/front/fonts/AvenirLTStd-Roman.otf": {
     "file": "assets/AvenirLTStd-Roman.79c4a676.otf",
     "src": "resources/front/fonts/AvenirLTStd-Roman.otf"
+  },
+  "resources/front/fonts/AvenirLTStd-Book.otf": {
+    "file": "assets/AvenirLTStd-Book.4fb98e77.otf",
+    "src": "resources/front/fonts/AvenirLTStd-Book.otf"
   },
   "resources/admin/js/admin.js": {
     "file": "assets/admin.e7ddc68d.js",
@@ -186,6 +186,10 @@
     "file": "assets/AdminAddProject.d537c655.css",
     "src": "resources/admin/js/pages/AdminAddProject.css"
   },
+  "resources/front/js/pages/OurCLients.css": {
+    "file": "assets/OurCLients.d1f44f8e.css",
+    "src": "resources/front/js/pages/OurCLients.css"
+  },
   "resources/admin/js/pages/ManageClients.css": {
     "file": "assets/ManageClients.3a1e03f0.css",
     "src": "resources/admin/js/pages/ManageClients.css"
@@ -194,38 +198,34 @@
     "file": "assets/index.b204f4a0.css",
     "src": "resources/front/js/pages/index.css"
   },
-  "resources/front/js/pages/Work.css": {
-    "file": "assets/Work.0a07b3fe.css",
-    "src": "resources/front/js/pages/Work.css"
-  },
   "resources/front/js/pages/Offering.css": {
     "file": "assets/Offering.d4d894bc.css",
     "src": "resources/front/js/pages/Offering.css"
-  },
-  "ProjectsList.css": {
-    "file": "assets/ProjectsList.e62e3205.css",
-    "src": "ProjectsList.css"
   },
   "resources/front/js/pages/ShowProject.css": {
     "file": "assets/ShowProject.c49eeb25.css",
     "src": "resources/front/js/pages/ShowProject.css"
   },
-  "resources/front/js/pages/OurCLients.css": {
-    "file": "assets/OurCLients.d1f44f8e.css",
-    "src": "resources/front/js/pages/OurCLients.css"
+  "resources/front/js/pages/Work.css": {
+    "file": "assets/Work.0a07b3fe.css",
+    "src": "resources/front/js/pages/Work.css"
+  },
+  "ProjectsList.css": {
+    "file": "assets/ProjectsList.e62e3205.css",
+    "src": "ProjectsList.css"
   },
   "navigation.css": {
     "file": "assets/navigation.b4520f68.css",
     "src": "navigation.css"
   },
-  "resources/admin/css/admin.css": {
-    "file": "assets/admin.acd81033.css",
-    "src": "resources/admin/css/admin.css",
-    "isEntry": true
-  },
   "resources/front/css/front.css": {
     "file": "assets/front.44af44ac.css",
     "src": "resources/front/css/front.css",
+    "isEntry": true
+  },
+  "resources/admin/css/admin.css": {
+    "file": "assets/admin.acd81033.css",
+    "src": "resources/admin/css/admin.css",
     "isEntry": true
   },
   "resources/front/js/front.css": {
