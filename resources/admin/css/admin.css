@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    outline: none;
+}
+
+label {
+    @apply block mb-3 text-lg font-semibold
+}
+
+input,textarea {
+    @apply h-12 px-4 bg-white border-2  rounded-lg w-full focus:ring-primary focus:border-primary
+}
+.input-group{
+    @apply mb-2
+}
+.slide-fade-enter-active {
+    transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-leave-active {
+    transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateY(100px);
+    opacity: 0.6;
+}
+
+
+.fade-leave-active, .fade-enter-active {
+    transition: all 0.2s ease;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+    opacity: 0;
+}
+

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/AvenirLTStd-Black.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/AvenirLTStd-Roman.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/AvenirLTStd-Book.otf");
+    font-weight: 400;
+}
+
+.container {
+    @apply max-w-7xl overflow-hidden
+}
+
+.outline-button-primary {
+    @apply text-white border-2 border-primary rounded-lg px-8 py-2 text-lg hover:bg-primary hover:text-white
+}
+
+.unset-left {
+    left: unset
+}
+
+.unset-right{
+    right:uns
+}
+
+
