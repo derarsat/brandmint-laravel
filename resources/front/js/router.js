@@ -1,4 +1,4 @@
-import {createWebHistory, createRouter} from 'vue-router'
+import {createWebHistory, createRouter, createWebHashHistory} from 'vue-router'
 
 const Index = () => import('./pages/index.vue')
 const work = () => import('./pages/Work.vue')
@@ -36,7 +36,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory("/"),
+    history: createWebHashHistory("/"),
     routes, // short for `routes: routes`
     scrollBehavior (to, from, savedPosition) {
         window.scrollTo(0,0,"smooth")

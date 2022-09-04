@@ -1,4 +1,4 @@
-import {createWebHistory, createRouter} from 'vue-router'
+import {createWebHistory, createRouter, createWebHashHistory} from 'vue-router'
 
 
 const Login = () => import('./pages/Login.vue')
@@ -39,7 +39,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory("/admin"),
+    history: createWebHashHistory("/admin"),
     routes, // short for `routes: routes`
 })
 export default router
