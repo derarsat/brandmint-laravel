@@ -14,7 +14,7 @@
         <ProjectsList class="container" :projects="featuredProjects"/>
         <div class="bg-black  py-24">
             <div class="container flex items-center justify-between">
-                <div class="w-6/12 relative">
+                <div data-aos="fade-right" class="w-6/12 relative">
                     <div class="absolute w-full h-full flex items-center justify-center">
                         <div class="relative w-20 h-20">
                             <div id="cont"
@@ -33,7 +33,7 @@
                     </div>
                     <img src="../../assets/videocover.jpeg" alt="" class="w-full">
                 </div>
-                <div class="text-white w-5/12">
+                <div data-aos="fade-left" class="text-white w-5/12">
                     <h1 class="text-5xl font-medium mb-8">Our Culture</h1>
                     <p>
                         Our culture is all about caring. When you work with Brandmint, we consider ourselves as the

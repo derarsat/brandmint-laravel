@@ -1,10 +1,10 @@
 import {createWebHistory, createRouter, createWebHashHistory} from 'vue-router'
 
-const Index = () => import('./pages/index.vue')
-const work = () => import('./pages/Work.vue')
-const offering = () => import('./pages/Offering.vue')
-const ourClients = () => import('./pages/OurCLients.vue')
-const ShowProject = () => import('./pages/ShowProject.vue')
+const Index = import('./pages/index.vue')
+const work = import('./pages/Work.vue')
+const offering = import('./pages/Offering.vue')
+const ourClients = import('./pages/OurCLients.vue')
+const ShowProject = import('./pages/ShowProject.vue')
 const routes = [
     {
         name: "Home",
@@ -28,7 +28,7 @@ const routes = [
     },
     {
         name: "ShowProject",
-        props:true,
+        props: true,
         path: "/project/:id",
         component: ShowProject,
     },
@@ -38,8 +38,8 @@ const routes = [
 const router = createRouter({
     history: createWebHashHistory("/"),
     routes, // short for `routes: routes`
-    scrollBehavior (to, from, savedPosition) {
-        window.scrollTo(0,0,"smooth")
+    scrollBehavior(to, from, savedPosition) {
+        window.scrollTo(0, 0, "smooth")
     }
 })
 export default router

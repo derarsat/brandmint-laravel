@@ -48,9 +48,7 @@
                     <button class="bg-primary h-12  w-full block rounded-xl"
                             :class="loading && 'cursor-not-allowed opacity-30'" :disabled="loading">Login
                     </button>
-                    <Transition name="slide-fade">
                         <p class="text-red-500 mt-3" v-if="error.length > 0"> {{ error }}</p>
-                    </Transition>
                 </div>
             </form>
         </div>
@@ -73,6 +71,7 @@ async function attempLogin() {
     await axios.get('/sanctum/csrf-cookie', {baseURL: "/"})
     await axios.post('/login', {email: email.value, password: password.value}).then(({data}) => {
         localStorage.setItem("token", data.token)
+        localStorage.setItem("logged", true)
         router.push({name: "AdminManageProjects"})
     }).catch((e) => {
         error.value = e.response.data.data

@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/login', [AuthController::class, 'login']);
-Route::group(["prefix" => "dashboard"], function () {
+Route::group(["prefix" => "dashboard", "middleware" => 'auth:sanctum'], function () {
     Route::post('/save-project', [ProjectController::class, "save"]);
     Route::get('/projects', [ProjectController::class, "index"]);
     Route::post('/add-client', [CLientController::class, "add"]);

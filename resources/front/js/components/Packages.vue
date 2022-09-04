@@ -136,7 +136,7 @@
                               transform="translate(-132.906 -144.044)"/>
                     </g>
                 </svg>
-                <button class="px-6 border-2 border-primary py-2.5 text-lg rounded-md text-primary mt-8 mb-6 hover:bg-primary hover:text-white">Read more</button>
+                <router-link :to="{name:'Offering'}" class="px-6 border-2 border-primary py-2.5 text-lg rounded-md text-primary mt-8 mb-6 hover:bg-primary hover:text-white">Read more</router-link>
 
             </div>
 
@@ -256,7 +256,7 @@
                     </g>
                 </svg>
 
-                <button class="px-6 py-2.5 bg-primary text-lg rounded-md text-white mt-8 mb-6 border-2 border-primary hover:bg-white hover:text-primary">Read more</button>
+                <router-link :to="{name:'Offering'}" class="px-6 py-2.5 bg-primary text-lg rounded-md text-white mt-8 mb-6 border-2 border-primary hover:bg-white hover:text-primary">Read more</router-link>
             </div>
         </div>
     </div>

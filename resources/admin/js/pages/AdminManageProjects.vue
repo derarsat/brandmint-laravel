@@ -9,7 +9,7 @@
             </router-link>
         </div>
         <!--List-->
-        <table class="table-auto w-full mt-24">
+        <table class="table-fixed w-full mt-24">
             <thead>
             <tr>
                 <th class="border-b  font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 text-left">Name</th>

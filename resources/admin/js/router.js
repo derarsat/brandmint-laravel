@@ -42,4 +42,10 @@ const router = createRouter({
     history: createWebHashHistory("/admin"),
     routes, // short for `routes: routes`
 })
+router.beforeEach((to, from, next) => {
+    const isAuthenticated = localStorage.getItem("logged")
+    if (to.name !== 'AdminLogin' && !isAuthenticated) next({name: 'AdminLogin'})
+    if (to.name === 'AdminLogin' && isAuthenticated) next({name: 'AdminManageProjects'})
+    else next()
+})
 export default router
