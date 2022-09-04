@@ -39,7 +39,7 @@
                 <td v-text="project.link"
                     class="border-b border-slate-100 p-4 pl-8 "/>
                 <td v-text="project.description"
-                    class="border-b border-slate-100 p-4 pl-8 "/>
+                    class="border-b border-slate-100 p-4 pl-8 overflow-hidden"/>
                 <td v-text="project.tags"
                     class="border-b border-slate-100 p-4 pl-8 "/>
                 <td class="flex items-center gap-2 flex-wrap">

@@ -1,4 +1,12 @@
 {
+  "resources/front/assets/videocover.jpeg": {
+    "file": "assets/videocover.26e006b6.jpeg",
+    "src": "resources/front/assets/videocover.jpeg"
+  },
+  "resources/front/assets/brandmint.mp4": {
+    "file": "assets/brandmint.603d1849.mp4",
+    "src": "resources/front/assets/brandmint.mp4"
+  },
   "resources/front/assets/raya.png": {
     "file": "assets/raya.f4245a16.png",
     "src": "resources/front/assets/raya.png"
@@ -7,34 +15,37 @@
     "file": "assets/AvenirLTStd-Book.4fb98e77.otf",
     "src": "resources/front/fonts/AvenirLTStd-Book.otf"
   },
-  "resources/front/fonts/AvenirLTStd-Black.otf": {
-    "file": "assets/AvenirLTStd-Black.63c31b44.otf",
-    "src": "resources/front/fonts/AvenirLTStd-Black.otf"
-  },
   "resources/front/fonts/AvenirLTStd-Roman.otf": {
     "file": "assets/AvenirLTStd-Roman.79c4a676.otf",
     "src": "resources/front/fonts/AvenirLTStd-Roman.otf"
   },
+  "resources/front/fonts/AvenirLTStd-Black.otf": {
+    "file": "assets/AvenirLTStd-Black.63c31b44.otf",
+    "src": "resources/front/fonts/AvenirLTStd-Black.otf"
+  },
   "resources/admin/js/admin.js": {
-    "file": "assets/admin.e7ddc68d.js",
+    "file": "assets/admin.68be4050.js",
     "src": "resources/admin/js/admin.js",
     "isEntry": true,
     "imports": [
-      "_preload-helper.f2a2fdf2.js"
+      "_preload-helper.17a8ef55.js"
     ],
     "dynamicImports": [
       "resources/admin/js/pages/Login.vue",
       "resources/admin/js/pages/AdminManageProjects.vue",
       "resources/admin/js/pages/AdminAddProject.vue",
       "resources/admin/js/pages/ManageClients.vue"
+    ],
+    "css": [
+      "assets/admin.f0f224ba.css"
     ]
   },
   "resources/front/js/front.js": {
-    "file": "assets/front.93a2d1c5.js",
+    "file": "assets/front.cd107f0f.js",
     "src": "resources/front/js/front.js",
     "isEntry": true,
     "imports": [
-      "_preload-helper.f2a2fdf2.js"
+      "_preload-helper.17a8ef55.js"
     ],
     "dynamicImports": [
       "resources/front/js/pages/index.vue",
@@ -52,171 +63,180 @@
       "assets/AvenirLTStd-Book.4fb98e77.otf"
     ]
   },
-  "_preload-helper.f2a2fdf2.js": {
-    "file": "assets/preload-helper.f2a2fdf2.js"
+  "_preload-helper.17a8ef55.js": {
+    "file": "assets/preload-helper.17a8ef55.js"
   },
   "resources/admin/js/pages/Login.vue": {
-    "file": "assets/Login.f6bc0b5d.js",
+    "file": "assets/Login.d7e39258.js",
     "src": "resources/admin/js/pages/Login.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper.f2a2fdf2.js"
+      "_preload-helper.17a8ef55.js"
     ]
   },
   "resources/admin/js/pages/AdminManageProjects.vue": {
-    "file": "assets/AdminManageProjects.01eb80a2.js",
+    "file": "assets/AdminManageProjects.ddd5df31.js",
     "src": "resources/admin/js/pages/AdminManageProjects.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper.f2a2fdf2.js"
+      "_preload-helper.17a8ef55.js"
     ]
   },
   "resources/admin/js/pages/AdminAddProject.vue": {
-    "file": "assets/AdminAddProject.80edb3bc.js",
+    "file": "assets/AdminAddProject.b9457ab3.js",
     "src": "resources/admin/js/pages/AdminAddProject.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper.f2a2fdf2.js",
-      "_listbox.00845ec1.js"
+      "_preload-helper.17a8ef55.js",
+      "_listbox.3de139d8.js"
     ],
     "css": [
       "assets/AdminAddProject.d537c655.css"
     ]
   },
-  "_listbox.00845ec1.js": {
-    "file": "assets/listbox.00845ec1.js",
+  "_listbox.3de139d8.js": {
+    "file": "assets/listbox.3de139d8.js",
     "imports": [
-      "_preload-helper.f2a2fdf2.js"
+      "_preload-helper.17a8ef55.js"
     ]
   },
   "resources/admin/js/pages/ManageClients.vue": {
-    "file": "assets/ManageClients.10f84c52.js",
+    "file": "assets/ManageClients.6a52cd5a.js",
     "src": "resources/admin/js/pages/ManageClients.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper.f2a2fdf2.js",
-      "resources/admin/js/admin.js",
-      "_listbox.00845ec1.js"
+      "_preload-helper.17a8ef55.js",
+      "_listbox.3de139d8.js"
     ],
     "css": [
       "assets/ManageClients.3a1e03f0.css"
     ]
   },
   "resources/front/js/pages/index.vue": {
-    "file": "assets/index.6e9a7b16.js",
+    "file": "assets/index.214db8ba.js",
     "src": "resources/front/js/pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper.f2a2fdf2.js",
-      "_ProjectsList.4edac474.js"
+      "_preload-helper.17a8ef55.js",
+      "_ProjectsList.a71ea874.js"
     ],
     "css": [
-      "assets/index.b204f4a0.css"
+      "assets/index.76433765.css"
     ],
     "assets": [
+      "assets/brandmint.603d1849.mp4",
+      "assets/videocover.26e006b6.jpeg",
       "assets/raya.f4245a16.png"
     ]
   },
-  "_ProjectsList.4edac474.js": {
-    "file": "assets/ProjectsList.4edac474.js",
+  "_ProjectsList.a71ea874.js": {
+    "file": "assets/ProjectsList.a71ea874.js",
     "imports": [
-      "_preload-helper.f2a2fdf2.js"
+      "_preload-helper.17a8ef55.js"
     ],
     "css": [
       "assets/ProjectsList.e62e3205.css"
     ]
   },
   "resources/front/js/pages/Work.vue": {
-    "file": "assets/Work.326a203f.js",
+    "file": "assets/Work.e0f642a5.js",
     "src": "resources/front/js/pages/Work.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_ProjectsList.4edac474.js",
-      "_preload-helper.f2a2fdf2.js"
+      "_ProjectsList.a71ea874.js",
+      "_preload-helper.17a8ef55.js"
     ],
     "css": [
-      "assets/Work.3a9a42a4.css"
+      "assets/Work.c7592f9f.css"
     ]
   },
   "resources/front/js/pages/Offering.vue": {
-    "file": "assets/Offering.f8ea5d33.js",
+    "file": "assets/Offering.34a5b6ef.js",
     "src": "resources/front/js/pages/Offering.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper.f2a2fdf2.js"
+      "_preload-helper.17a8ef55.js"
     ],
     "css": [
       "assets/Offering.d4d894bc.css"
     ]
   },
   "resources/front/js/pages/OurCLients.vue": {
-    "file": "assets/OurCLients.933619fe.js",
+    "file": "assets/OurCLients.59ad2393.js",
     "src": "resources/front/js/pages/OurCLients.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_navigation.min.a9dcf8d6.js",
-      "_preload-helper.f2a2fdf2.js"
+      "_navigation.min.ab8e855c.js",
+      "_preload-helper.17a8ef55.js"
     ],
     "css": [
-      "assets/OurCLients.401bbcc7.css"
+      "assets/OurCLients.7d0968b1.css"
     ]
   },
-  "_navigation.min.a9dcf8d6.js": {
-    "file": "assets/navigation.min.a9dcf8d6.js",
+  "_navigation.min.ab8e855c.js": {
+    "file": "assets/navigation.min.ab8e855c.js",
     "imports": [
-      "_preload-helper.f2a2fdf2.js"
+      "_preload-helper.17a8ef55.js"
     ],
     "css": [
       "assets/navigation.b4520f68.css"
     ]
   },
   "resources/front/js/pages/ShowProject.vue": {
-    "file": "assets/ShowProject.7b0c0d91.js",
+    "file": "assets/ShowProject.346daf24.js",
     "src": "resources/front/js/pages/ShowProject.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_preload-helper.f2a2fdf2.js",
-      "_navigation.min.a9dcf8d6.js"
+      "_preload-helper.17a8ef55.js",
+      "_navigation.min.ab8e855c.js"
     ],
     "css": [
       "assets/ShowProject.77cdf630.css"
     ]
   },
-  "resources/admin/js/pages/AdminAddProject.css": {
-    "file": "assets/AdminAddProject.d537c655.css",
-    "src": "resources/admin/js/pages/AdminAddProject.css"
-  },
-  "resources/front/js/pages/Work.css": {
-    "file": "assets/Work.3a9a42a4.css",
-    "src": "resources/front/js/pages/Work.css"
+  "resources/admin/js/admin.css": {
+    "file": "assets/admin.f0f224ba.css",
+    "src": "resources/admin/js/admin.css"
   },
   "resources/front/js/pages/Offering.css": {
     "file": "assets/Offering.d4d894bc.css",
     "src": "resources/front/js/pages/Offering.css"
   },
-  "resources/front/js/pages/index.css": {
-    "file": "assets/index.b204f4a0.css",
-    "src": "resources/front/js/pages/index.css"
-  },
-  "resources/front/js/pages/ShowProject.css": {
-    "file": "assets/ShowProject.77cdf630.css",
-    "src": "resources/front/js/pages/ShowProject.css"
+  "ProjectsList.css": {
+    "file": "assets/ProjectsList.e62e3205.css",
+    "src": "ProjectsList.css"
   },
   "resources/admin/js/pages/ManageClients.css": {
     "file": "assets/ManageClients.3a1e03f0.css",
     "src": "resources/admin/js/pages/ManageClients.css"
   },
+  "resources/front/js/pages/ShowProject.css": {
+    "file": "assets/ShowProject.77cdf630.css",
+    "src": "resources/front/js/pages/ShowProject.css"
+  },
+  "resources/front/js/pages/Work.css": {
+    "file": "assets/Work.c7592f9f.css",
+    "src": "resources/front/js/pages/Work.css"
+  },
   "resources/front/js/pages/OurCLients.css": {
-    "file": "assets/OurCLients.401bbcc7.css",
+    "file": "assets/OurCLients.7d0968b1.css",
     "src": "resources/front/js/pages/OurCLients.css"
   },
-  "ProjectsList.css": {
-    "file": "assets/ProjectsList.e62e3205.css",
-    "src": "ProjectsList.css"
+  "resources/admin/js/pages/AdminAddProject.css": {
+    "file": "assets/AdminAddProject.d537c655.css",
+    "src": "resources/admin/js/pages/AdminAddProject.css"
+  },
+  "resources/front/js/pages/index.css": {
+    "file": "assets/index.76433765.css",
+    "src": "resources/front/js/pages/index.css"
   },
   "navigation.css": {
     "file": "assets/navigation.b4520f68.css",
     "src": "navigation.css"
+  },
+  "resources/front/js/front.css": {
+    "file": "assets/front.7e6437ee.css",
+    "src": "resources/front/js/front.css"
   },
   "resources/admin/css/admin.css": {
     "file": "assets/admin.acd81033.css",
@@ -227,9 +247,5 @@
     "file": "assets/front.44af44ac.css",
     "src": "resources/front/css/front.css",
     "isEntry": true
-  },
-  "resources/front/js/front.css": {
-    "file": "assets/front.7e6437ee.css",
-    "src": "resources/front/js/front.css"
   }
 }

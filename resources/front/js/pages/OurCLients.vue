@@ -1,9 +1,8 @@
 <template>
-    {{enviro}}
-    {{fb}}
-    <div class="container" v-if="enviro">
+    <div class="container" v-if="ready">
         <h1 class="text-5xl font-medium mt-20 mb-2"> Our Clients</h1>
-        <p class="mb-16 text-xl"> We're proud of helping the best companies deliver positive emotions <br> to their customers.</p>
+        <p class="mb-16 text-xl"> We're proud of helping the best companies deliver positive emotions <br> to their
+            customers.</p>
         <ClientsList key="enviro" :clients="enviro"/>
         <ClientsList key="fb" :clients="fb"/>
     </div>
@@ -19,16 +18,18 @@ import ClientsList from "../components/ClientsList.vue";
 
 const fb = ref()
 const enviro = ref()
-const base = location.href.indexOf("brandmint") > 0 ? "public" : ""
+const ready = ref(false)
+
 function getProjects() {
-    fetch(base + '/api/front/clients')
-        .then((response) => response.json())
-        .then((data) => parseData(data));
+    window.axios.get('/clients').then((r) => {
+        parseData(r.data)
+    })
 }
 
 function parseData(data) {
     enviro.value = data.filter((client) => client.category === "Environmental Design")
     fb.value = data.filter((client) => client.category === "F&B")
+    ready.value = true
 }
 
 onMounted(() => {

@@ -25,9 +25,9 @@ const fb = ref()
 const enviro = ref()
 
 function getProjects() {
-    fetch('/api/front/projects')
-        .then((response) => response.json())
-        .then((data) => parseData(data));
+    window.axios.get("/projects").then((r) => {
+        parseData(r.data)
+    })
 }
 
 function parseData(data) {

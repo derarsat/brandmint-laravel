@@ -1,5 +1,5 @@
 <template>
-    <div class=" mb-24">
+    <div class=" mb-24" v-if="clients.length">
         <div class="flex items-center justify-between">
             <h1 class="font-semibold text-3xl text-primary mt-6 mb-8">{{ clients[0]["category"] }}</h1>
             <div class="flex items-center gap-4">
